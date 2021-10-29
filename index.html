@@ -17,18 +17,23 @@
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/styles.css">
 
+	<script src="js/respond.js"></script>
+
 </head>
 
 <body>
 	<header>
 
-		<ul class="nav_list">
-			<li class="nav_item"><a href="#" class="nav_link"> Home </a></li>
-			<li class="nav_item"><a href="#tools" class="nav_link"> Technical Experience </a></li>
-			<li class="nav_item"><a href="#about" class="nav_link"> About me </a></li>
-			<li class="nav_item"><a href="#mylinks" class="nav_link"> My links </a></li>
-			<li class="nav_item nav_item-title" style="float:left"><a href="#"> WIRMANTONO'S PORTFOLIO</a></li>
-		</ul>
+		<div class="nav_list" id="navList">
+			<a class="nav_link" href="#"><strong>WIRMANTONO'S PORTFOLIO</strong></a>
+			<div class="nav_list_right">
+				<a href="#" class="nav_link">Home</a>
+				<a href="#tools" class="nav_link">Technical Experience</a>
+				<a href="#about" class="nav_link">About me</a>
+				<a href="#mylinks" class="nav_link">My links</a>
+			</div>
+			<a href="javascript:void(0);" class="nav_icon" onclick="unfoldMenu()"><i class="fas fa-bars"></i></a>
+		</div>
 	</header>
 
 		<!-- Introduction -->
@@ -45,7 +50,6 @@
 		<!-- section for technical knowledge and tools-->
 		<section class="tools" id="tools">
 			<h2 class="section_title section_title-tools"> Technical Experience </h2>
-			<!-- <h3 class="section_subtitle section_subtitle-tools"> </h3> -->
 			<dl class="desclist desclist-tools">
 				<dt class="desctitle-tools"><i class="fab fa-python"></i> <strong>Python</strong></dt>
 				<dd class="descdesc-tools">Three years <i class="fa fa-star"></i></dd>
