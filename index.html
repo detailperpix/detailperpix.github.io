@@ -10,41 +10,65 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
-	<!-- normalize.css -->
-	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-	<!-- font awesome -->
-
-	<link rel="stylesheet" href="css/all.css">
-	<link rel="stylesheet" href="css/styles.css">
-
-	<script src="js/respond.js"></script>
+		<!-- sanitize.css -->
+		<link
+		  href="https://unpkg.com/sanitize.css"
+		    rel="stylesheet"
+			/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css" />
 
 </head>
 
 <body>
 	<header>
 
-		<div class="nav_list" id="navList">
-			<a class="nav_link" href="#"><strong>WIRMANTONO'S PORTFOLIO</strong></a>
-			<div class="nav_list_right">
-				<a href="#" class="nav_link">Home</a>
-				<a href="#tools" class="nav_link">Technical Experience</a>
-				<a href="#about" class="nav_link">About me</a>
-				<a href="#mylinks" class="nav_link">My links</a>
-			</div>
-			<a href="javascript:void(0);" class="nav_icon" onclick="unfoldMenu()"><i class="fas fa-bars"></i></a>
+		<div class="pure-menu pure-menu-horizontal pure-menu-scrollable" id="navList">
+			<a class="pure-menu-heading pure-menu-link" href="#"><strong>WIRMANTONO'S PORTFOLIO</strong></a>
+			<ul class="pure-menu-list">
+				<li class="pure-menu-item">
+					<a href="#" class="pure-menu-link">Home</a>
+				</li>
+				<li class="pure-menu-item">
+					
+					<a href="#tools" class="pure-menu-link">Technical Experience</a>
+				</li>
+				<li class="pure-menu-item">
+					<a href="#about" class="pure-menu-link">About me</a>
+				</li>
+				<li class="pure-menu-item">
+					<a href="#mylinks" class="pure-menu-link">My links</a>
+				</li>
+			</ul>
+			<!--			<a href="javascript:void(0);" class="nav_icon" onclick="unfoldMenu()"><i class="fas fa-bars"></i></a> -->
 		</div>
 	</header>
 
+	<div id="layout" class="pure-g">
+		<div class="sidebar pure-u-1 pure-u-md-1-4">
+			<div class="header">
+				<h1> This is a title </h1>
+			</div>
+		</div>
+		<div class="content pure-u-1 pure-u-md-3-4">
+			<div>
+			<h1> This is a content </h1>
+			<p>     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			</div>
 		<!-- Introduction -->
-		<section class="intro" id="home">
+		<section class="pure-g" id="home">
 
-			<img src="img/Wirmantono_Casual.jpg" class="img-intro">
-			<span>
-				<h1 class="section_title"> Hello, I am </h1>
-				<h1 class="section_title section_title-intro">Wirmantono</h1>
-			</span>
-			<p class="section_subtitle section_subtitle-intro">Computer science undergraduate </p>
+			<div class="pure-u-1 pure-u-md-1-3">
+				<img width="100%" height="100%" src="img/Wirmantono_Casual.jpg" class="img-intro">
+			</div>
+			<div class="pure-u-1 pure-u-md-1-3">
+				<h1 class="section_title section_title-intro">Wirmantono</h1> 
+				<p class="section_subtitle section_subtitle-intro">Computer science undergraduate </p>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-3">
+				<h1 class="section_title section_title-intro"> Hello, I am <br>Wirmantono</h1>
+			</div>
 		</section>
 
 		<!-- section for technical knowledge and tools-->
@@ -98,13 +122,15 @@
 				Portfolio currently WIP
 			</h3>
 		</section>
+		</div>
+	</div>
+
 
 
 
 		<!-- Footer -->
 		<footer>
-			<p>Copyright Wirmantono 2021-</p>
-			<p>Font Awesome by Dave Gandy - <a href="https://fontawesome.com">https://fontawesome.com</a></p>
+			<p>Copyright Wirmantono 2022</p>
 			<a href="mailto:wirmantonochong@gmail.com" class="footer_link-emailtome">wirmantonochong@gmail.com</a>
 
 		</footer>
