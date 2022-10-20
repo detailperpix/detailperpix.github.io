@@ -19,6 +19,9 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css" />
 
+		<!-- font awesome -->
+		<link rel="stylesheet" href="css/all.css">
+
 	</head>
 
 	<body>
@@ -31,17 +34,17 @@
 			<div class="sidebar pure-u-1 pure-u-md-1-4">
 				<div class="header">
 					<div class="pure-menu custom-restricted-width" id="navList">
-						<a class="pure-menu-heading pure-menu-link" href="#"><strong>WIRMANTONO'S PORTFOLIO</strong></a>
+						<a class="pure-menu-heading pure-menu-link" href="#"><strong>WIRMANTONO'S<br> PORTFOLIO</strong></a>
 						<ul class="pure-menu-list">
 							<li class="pure-menu-item">
 								<a href="#" class="pure-menu-link">Home</a>
 							</li>
 							<li class="pure-menu-item">
-
-								<a href="#tools" class="pure-menu-link">Technical Experience</a>
+								<a href="work-experience.html" class="pure-menu-link">Work Experience</a>
 							</li>
 							<li class="pure-menu-item">
-								<a href="#about" class="pure-menu-link">About me</a>
+
+								<a href="#tools" class="pure-menu-link">Technical Experience</a>
 							</li>
 							<li class="pure-menu-item">
 								<a href="#mylinks" class="pure-menu-link">My links</a>
@@ -52,24 +55,28 @@
 				</div>
 			</div>
 			<div class="content pure-u-1 pure-u-md-3-4">
-				<div>
-					<h1> This is a content </h1>
-					<p>     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
 				<!-- Introduction -->
 				<section class="pure-g" id="home">
 
-					<div class="pure-u-1 pure-u-md-1-3">
-						<img width="100%" height="100%" src="img/Wirmantono_Casual.jpg">
+					<div class="pure-u-1 pure-u-sm-10-24 pure-u-xl-1-3">
+						<img class="img-intro" src="img/Wirmantono_Casual.jpg">
 					</div>
-					<div class="pure-u-1 pure-u-md-1-3">
-						<h1>Wirmantono</h1> 
-						<p>Computer science undergraduate </p>
+
+					<div class=" pure-u-1 pure-u-sm-14-24 pure-u-xl-2-3">
+						<div class="section-about-me">
+							<h1 class="section-about-me-title">About Me</h1>
+							<p> 
+							Hi! I am Wirmantono. I have completed Computer Science course in Monash University Malaysia, currently I am awaiting for graduation.
+							I have strong curiosity in technology and passion in developing software. My main skills is broad algorithm
+							knowledge and problem solving.
+							</p>
+						</div>
 					</div>
-					<div class="pure-u-1 pure-u-md-1-3">
-						<h1> Hello, I am <br>Wirmantono</h1>
-					</div>
+				</section>
+
+				<!-- section for career summary -->
+				<section class="pure-g" id="carrer-experiences">
+					<h2 class="pure-u-1">Work Experience</h2>
 				</section>
 
 				<!-- section for technical knowledge and tools-->
@@ -91,28 +98,18 @@
 					</dl>
 				</section>
 
-				<!-- About me -->
-				<section class="about" id="about">
-					<h2 class="section_title section_title-about" id="about"> About Me </h2>
-					<h3 class="section_subtitle section_subtitle-about" id="about">A little bit about myself</h3>
-					<div class="body-about">
-						<p> 
-						Hi! I am Wirmantono. I am currently pursuing Computer Science degree in Monash University Malaysia.
-						I have strong curiosity in technology and passion in developing software. My main skills is broad algorithm
-						knowledge and problem solving.
-						</p>
-					</div>
-
-				</section>
 
 				<section class="mylinks" id="mylinks">
 					<h2 class="section_title section_title-mylinks">
 						My Links
 					</h2>
-					<ul class="list-mylinks">
-						<li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/wirmantono-z/">LinkedIn</a></li>
-						<li><i class="fab fa-github"></i> <a href="https://www.github.com/detailperpix/">GitHub</a></li>
-					</ul>
+					<a class="pure-button" href="https://www.linkedin.com/in/wirmantono-z" target="_blank" rel="noopener noreferrer">
+						LinkedIn <i class="fab fa-linkedin"></i>
+					</a>
+					<a class="pure-button" href="https://www.github.com/detailperpix/" target="_blank" rel="noopener noreferrer">
+
+						GitHub <i class="fab fa-github"></i>
+					</a>
 				</section>
 
 				<section class="more" id="more">
@@ -134,6 +131,7 @@
 			<p>Copyright Wirmantono 2022</p>
 			<a href="mailto:wirmantonochong@gmail.com" class="footer_link-emailtome">wirmantonochong@gmail.com</a>
 
+			<p>Font Awesome by Dave Gandy - <a href="http://fontawesome.io"/>http://fontawesome.io</p>
 		</footer>
 	</body>
 
