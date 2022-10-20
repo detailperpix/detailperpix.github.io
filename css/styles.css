@@ -63,6 +63,7 @@ footer {
 	position: relative;
 	margin: auto 0.5em ;
 	background-color: var(--clr-light);
+	color: var(--clr-dark-pastel);
 	text-align: right;
 }
 
@@ -81,6 +82,11 @@ footer {
 	background-color: var(--clr-light-pastel);
 	color: var(--clr-dark-pastel);
 }
+
+.section-about-me {
+	background-color: var(--clr-dark-pastel);
+	color: var(--clr-light-pastel);
+}
 @media (min-width: 48em) {
 
 	.content {
@@ -88,6 +94,7 @@ footer {
 	}
 	.sidebar {
 		position: fixed;
+		z-index: 0;
 	}
 	.header {
 		margin: 80% 2em 0;
@@ -109,6 +116,12 @@ footer {
 
 	.section-about-me {
 		padding: 2em;
+	}
+
+	footer {
+		position: relative;
+		background-color: var(--clr-light-pastel);
+		z-index: 1;
 	}
 
 
