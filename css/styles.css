@@ -87,6 +87,18 @@ footer {
 	background-color: var(--clr-dark-pastel);
 	color: var(--clr-light-pastel);
 }
+
+.content-section {
+	margin: 0.5em auto;
+	border: 3px solid var(--clr-light-pastel);
+	background-color: #f5f5f5;
+	padding: 0 1em;
+	border-radius: 0.25em;
+}
+
+hr.grey {
+	border-top: 1px solid var(--clr-light-pastel);
+}
 @media (min-width: 48em) {
 
 	.content {
